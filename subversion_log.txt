@@ -1,0 +1,443 @@
+URL to view log online:
+https://source.eait.uq.edu.au/viewvc/csse2310-sem2-s4431796/trunk/a1/?view=log
+
+------------------------------------------------------------------------
+r1 | uqpsutto@uq.edu.au | 2021-08-03 11:11:48 +1000 (Tue, 03 Aug 2021) | 1 line
+Changed paths:
+   A /prac2
+   A /trunk
+   A /trunk/a1
+   A /trunk/a3
+   A /trunk/a4
+
+Initial repository structure
+
+
+------------------------------------------------------------------------
+r7 | s4431796 | 2021-08-10 23:41:33 +1000 (Tue, 10 Aug 2021) | 1 line
+Changed paths:
+   A /trunk/a1/unjumble.c
+
+initial commit
+
+Index: unjumble.c
+ unjumble.c |    2 ++
+ 1 file changed, 2 insertions(+)
+
+------------------------------------------------------------------------
+r8 | s4431796 | 2021-08-14 00:06:21 +1000 (Sat, 14 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+exit status function partial implementation
+
+Index: unjumble.c
+ unjumble.c |   52 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 52 insertions(+)
+
+------------------------------------------------------------------------
+r9 | s4431796 | 2021-08-14 00:21:41 +1000 (Sat, 14 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+error output for args not between 1 and 5
+
+Index: unjumble.c
+ unjumble.c |   14 ++++++++++++--
+ 1 file changed, 12 insertions(+), 2 deletions(-)
+
+------------------------------------------------------------------------
+r10 | s4431796 | 2021-08-14 11:51:49 +1000 (Sat, 14 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+parse_cmd_args added, created struct for program data
+
+Index: unjumble.c
+ unjumble.c |   50 +++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 39 insertions(+), 11 deletions(-)
+
+------------------------------------------------------------------------
+r11 | s4431796 | 2021-08-14 16:04:44 +1000 (Sat, 14 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+processed command line args up to 4, initialised data struct
+
+Index: unjumble.c
+ unjumble.c |   85 ++++++++++++++++++++++++++++++++++++++++++++++++++++++-------
+ 1 file changed, 76 insertions(+), 9 deletions(-)
+
+------------------------------------------------------------------------
+r12 | s4431796 | 2021-08-16 14:09:19 +1000 (Mon, 16 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+parsed cmd args, added starts_with function
+
+Index: unjumble.c
+ unjumble.c |   67 +++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 37 insertions(+), 30 deletions(-)
+
+------------------------------------------------------------------------
+r13 | s4431796 | 2021-08-16 15:02:12 +1000 (Mon, 16 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+Invalid Command Line check implemented
+
+Index: unjumble.c
+ unjumble.c |   29 ++++++++++++++++++++++-------
+ 1 file changed, 22 insertions(+), 7 deletions(-)
+
+------------------------------------------------------------------------
+r14 | s4431796 | 2021-08-16 22:56:17 +1000 (Mon, 16 Aug 2021) | 2 lines
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+Implemented exit status 4: can only unjumble alphabetic characters 
+
+
+Index: unjumble.c
+ unjumble.c |   34 +++++++++++++++++++++++++++++-----
+ 1 file changed, 29 insertions(+), 5 deletions(-)
+
+------------------------------------------------------------------------
+r15 | s4431796 | 2021-08-17 00:10:15 +1000 (Tue, 17 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+validate dictionary partial implentation, not integrated with exit_program
+
+Index: unjumble.c
+ unjumble.c |   43 ++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 34 insertions(+), 9 deletions(-)
+
+------------------------------------------------------------------------
+r16 | s4431796 | 2021-08-17 00:29:31 +1000 (Tue, 17 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+fixed bugs causing null dictionary to be parsed in parse_cmd_args
+
+Index: unjumble.c
+ unjumble.c |    8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+------------------------------------------------------------------------
+r17 | s4431796 | 2021-08-17 19:49:57 +1000 (Tue, 17 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+implemented letter_frequency and added word struct: contains information of unique lettes and count for each unique letter in a given word
+
+Index: unjumble.c
+ unjumble.c |   45 ++++++++++++++++++++++++++++++++++++++++++---
+ 1 file changed, 42 insertions(+), 3 deletions(-)
+
+------------------------------------------------------------------------
+r18 | s4431796 | 2021-08-18 00:38:24 +1000 (Wed, 18 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+started to unjumble, letter_frequency implemneted, find_unique_letters partially implemented- still have bugs
+
+Index: unjumble.c
+ unjumble.c |   45 +++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 43 insertions(+), 2 deletions(-)
+
+------------------------------------------------------------------------
+r19 | s4431796 | 2021-08-18 14:06:09 +1000 (Wed, 18 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+find_unique_letters implemented; returns returns char* of string without duplicate letters
+
+Index: unjumble.c
+ unjumble.c |   21 ++++++++++-----------
+ 1 file changed, 10 insertions(+), 11 deletions(-)
+
+------------------------------------------------------------------------
+r20 | s4431796 | 2021-08-19 00:58:52 +1000 (Thu, 19 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+able to compare letters to dictionary words with exact case sensitivity. Added function to compare characters without case sensitivity.
+
+Index: unjumble.c
+ unjumble.c |   68 ++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 59 insertions(+), 9 deletions(-)
+
+------------------------------------------------------------------------
+r21 | s4431796 | 2021-08-19 01:38:12 +1000 (Thu, 19 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+default unjumble implemented, tested with 'cat' from demo unjumble
+
+Index: unjumble.c
+ unjumble.c |   23 ++++++++++++-----------
+ 1 file changed, 12 insertions(+), 11 deletions(-)
+
+------------------------------------------------------------------------
+r22 | s4431796 | 2021-08-19 13:30:55 +1000 (Thu, 19 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+read_dictionary now works for letters with duplicate chars. added comments on read_dictionary. Find_unique_letters does not use struct word anymore, instead a char* is initialised and returned.
+
+Index: unjumble.c
+ unjumble.c |   43 ++++++++++++++++++++++++++-----------------
+ 1 file changed, 26 insertions(+), 17 deletions(-)
+
+------------------------------------------------------------------------
+r23 | s4431796 | 2021-08-19 22:04:32 +1000 (Thu, 19 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+removed compaing chars with no case sensitive, used tolower() to convert char and compare them instead. Added comments to protoype function read_dictionary() and unjumble(). Changed int* count in Word struct to int 'length of uniqueLetters'
+
+Index: unjumble.c
+ unjumble.c |   24 ++++++++++--------------
+ 1 file changed, 10 insertions(+), 14 deletions(-)
+
+------------------------------------------------------------------------
+r24 | s4431796 | 2021-08-19 23:03:22 +1000 (Thu, 19 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+Added Makefile
+
+Index: unjumble.c
+ unjumble.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+------------------------------------------------------------------------
+r25 | s4431796 | 2021-08-19 23:05:27 +1000 (Thu, 19 Aug 2021) | 1 line
+Changed paths:
+   A /trunk/a1/Makefile
+
+added Makefile
+
+Index: Makefile
+ Makefile |    4 ++++
+ 1 file changed, 4 insertions(+)
+
+------------------------------------------------------------------------
+r26 | s4431796 | 2021-08-20 13:20:32 +1000 (Fri, 20 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+letter_frequency() now compares letters with no case sensitivity. Tidied up read_dictionary code by separating out varaibles from conditional statements
+
+Index: unjumble.c
+ unjumble.c |   33 +++++++++++++++++++++++++++------
+ 1 file changed, 27 insertions(+), 6 deletions(-)
+
+------------------------------------------------------------------------
+r27 | s4431796 | 2021-08-20 16:21:04 +1000 (Fri, 20 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+modified stderr message of exit status 4
+
+Index: unjumble.c
+ unjumble.c |   20 ++++++++++++++++----
+ 1 file changed, 16 insertions(+), 4 deletions(-)
+
+------------------------------------------------------------------------
+r28 | s4431796 | 2021-08-21 01:08:16 +1000 (Sat, 21 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/Makefile
+   M /trunk/a1/unjumble.c
+
+find_unique_characters now is not case sensitive, which cause bugs for 'caAt' vs 'caat'
+
+Index: Makefile
+ Makefile |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Index: unjumble.c
+ unjumble.c |   48 ++++++++++++++++++++++++++++--------------------
+ 1 file changed, 28 insertions(+), 20 deletions(-)
+
+------------------------------------------------------------------------
+r29 | s4431796 | 2021-08-21 14:29:21 +1000 (Sat, 21 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+read_dictionary() now appends results to dictioto word->dictinoaryResults. display_result() prints the results to stdout instead of printf inprintf in read_dictionary(). added exit(10) status if there are no results matched.
+
+Index: unjumble.c
+ unjumble.c |   27 +++++++++++++--------------
+ 1 file changed, 13 insertions(+), 14 deletions(-)
+
+------------------------------------------------------------------------
+r30 | s4431796 | 2021-08-21 15:09:09 +1000 (Sat, 21 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+added macros for exit status 10 and dictiand dictionary word buffer size
+
+Index: unjumble.c
+ unjumble.c |   24 +++++++++++-------------
+ 1 file changed, 11 insertions(+), 13 deletions(-)
+
+------------------------------------------------------------------------
+r31 | s4431796 | 2021-08-22 00:12:25 +1000 (Sun, 22 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+-include implemented
+
+Index: unjumble.c
+ unjumble.c |  108 ++++++++++++++++++++++++++++++++++++++++++++++++++++++-------
+ 1 file changed, 97 insertions(+), 11 deletions(-)
+
+------------------------------------------------------------------------
+r32 | s4431796 | 2021-08-22 10:30:00 +1000 (Sun, 22 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+sort function logic changed; include is checked first then -alpha is always checked if setting1 is toggled. -len and -longest is followed by -alpha for sorting if required.
+
+Index: unjumble.c
+ unjumble.c |   52 ++++++++++++++++++++++++++++++++--------------------
+ 1 file changed, 32 insertions(+), 20 deletions(-)
+
+------------------------------------------------------------------------
+r33 | s4431796 | 2021-08-22 10:34:02 +1000 (Sun, 22 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+sort logic changed; if, else condition for -len and -longest changed to 2 separate if statements. Taken -alpha into consideration first before the other two settings
+
+Index: unjumble.c
+ unjumble.c |    6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+------------------------------------------------------------------------
+r34 | s4431796 | 2021-08-24 01:29:12 +1000 (Tue, 24 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/Makefile
+   M /trunk/a1/unjumble.c
+
+fixed find_unique_letters to now work on repeating letters in a different order
+
+Index: Makefile
+ Makefile |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Index: unjumble.c
+ unjumble.c |   77 ++++++++++++++++++++++++++++++++++---------------------------
+ 1 file changed, 44 insertions(+), 33 deletions(-)
+
+------------------------------------------------------------------------
+r35 | s4431796 | 2021-08-24 01:32:58 +1000 (Tue, 24 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+fixed bug that caused uppercase letters to not register as unique character in find_unique_letters()
+
+Index: unjumble.c
+ unjumble.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+------------------------------------------------------------------------
+r36 | s4431796 | 2021-08-24 14:11:21 +1000 (Tue, 24 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+-include working, removed mallocing of copy array in include_sort() 
+
+Index: unjumble.c
+ unjumble.c |   14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+------------------------------------------------------------------------
+r37 | s4431796 | 2021-08-24 16:37:33 +1000 (Tue, 24 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+style checked ok
+
+Index: unjumble.c
+ unjumble.c |   50 +++++++++++++++++++++++++++-----------------------
+ 1 file changed, 27 insertions(+), 23 deletions(-)
+
+------------------------------------------------------------------------
+r38 | s4431796 | 2021-08-24 18:29:06 +1000 (Tue, 24 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+unjumble now works for words with big size, i.e. a-z chars
+
+Index: unjumble.c
+ unjumble.c |   13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+
+------------------------------------------------------------------------
+r39 | s4431796 | 2021-08-25 01:33:53 +1000 (Wed, 25 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+alpha_sort working, need to tidy up display to stdout
+
+Index: unjumble.c
+ unjumble.c |   94 ++++++++++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 78 insertions(+), 16 deletions(-)
+
+------------------------------------------------------------------------
+r40 | s4431796 | 2021-08-26 01:01:00 +1000 (Thu, 26 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+longest sort working, alpha sort sorts in ASCII order but not lexiographically
+
+Index: unjumble.c
+ unjumble.c |  106 +++++++++++++++++++++++++++++++++++--------------------------
+ 1 file changed, 61 insertions(+), 45 deletions(-)
+
+------------------------------------------------------------------------
+r41 | s4431796 | 2021-08-26 15:47:14 +1000 (Thu, 26 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+passed all tests, cmp_alpha is working as intended
+
+Index: unjumble.c
+ unjumble.c |   92 ++++++++++++++++++++++++++++++++++++++++++++++++++++++-------
+ 1 file changed, 82 insertions(+), 10 deletions(-)
+
+------------------------------------------------------------------------
+r42 | s4431796 | 2021-08-26 16:11:57 +1000 (Thu, 26 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+fixed style according to style.sh
+
+Index: unjumble.c
+ unjumble.c |   71 +++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 34 insertions(+), 37 deletions(-)
+
+------------------------------------------------------------------------
+r43 | s4431796 | 2021-08-26 18:37:15 +1000 (Thu, 26 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+added comments. Removed validate_dictionary. Dictionary validity is checked after being opened
+
+Index: unjumble.c
+ unjumble.c |   40 +++++++++++++---------------------------
+ 1 file changed, 13 insertions(+), 27 deletions(-)
+
+------------------------------------------------------------------------
+r44 | s4431796 | 2021-08-27 12:37:23 +1000 (Fri, 27 Aug 2021) | 1 line
+Changed paths:
+   M /trunk/a1/unjumble.c
+
+final submission
+
+Index: unjumble.c
+ unjumble.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+------------------------------------------------------------------------
