@@ -1,5 +1,4 @@
 # CSSE2310_A1
-CSSE2310 Assignement 1 
 
 The aim of this assignment is to create a program (called unjumble) which searches a dictionary of words to find words that can be made
 from a given collection (jumble) of letters. For example, you might use such a program to find all the words
